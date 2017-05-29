@@ -1,0 +1,166 @@
+@font-face{
+    font-family:'sterling_textregular';
+    src:url('../fonts/sterlingtext-roman.eot');
+    src:url('../fonts/sterlingtext-roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sterlingtext-roman.svg') format('svg'),
+        url('../fonts/sterlingtext-roman.woff') format('woff'),
+        url('../fonts/sterlingtext-roman.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'sterling_textitalic';
+    src:url('../fonts/sterlingtext-italic.eot');
+    src:url('../fonts/sterlingtext-italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sterlingtext-italic.svg') format('svg'),
+        url('../fonts/sterlingtext-italic.woff') format('woff'),
+        url('../fonts/sterlingtext-italic.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'sterling_textbold';
+    src:url('../fonts/sterlingtext-bold.eot');
+    src:url('../fonts/sterlingtext-bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sterlingtext-bold.svg') format('svg'),
+        url('../fonts/sterlingtext-bold.woff') format('woff'),
+        url('../fonts/sterlingtext-bold.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'proxima_novalight';
+    src:url('../fonts/proximanova-light.eot');
+    src:url('../fonts/proximanova-light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-light.svg') format('svg'),
+        url('../fonts/proximanova-light.woff') format('woff'),
+        url('../fonts/proximanova-light.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'proxima_nova_rgregular';
+    src:url('../fonts/proximanova-regular.eot');
+    src:url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-regular.svg') format('svg'),
+        url('../fonts/proximanova-regular.woff') format('woff'),
+        url('../fonts/proximanova-regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'proxima_novaregular_italic';
+    src:url('../fonts/proximanova-regularit.eot');
+    src:url('../fonts/proximanova-regularit.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-regularit.svg') format('svg'),
+        url('../fonts/proximanova-regularit.woff') format('woff'),
+        url('../fonts/proximanova-regularit.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'proxima_novathin';
+    src:url('../fonts/proximanova-thin.eot');
+    src:url('../fonts/proximanova-thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-thin.svg') format('svg'),
+        url('../fonts/proximanova-thin.woff') format('woff'),
+        url('../fonts/proximanova-thin.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* icons font */
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-yga1k5');
+    src:url('../fonts/icomoon.eot?#iefix-yga1k5') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-yga1k5') format('woff'),
+        url('../fonts/icomoon.ttf?-yga1k5') format('truetype'),
+        url('../fonts/icomoon.svg?-yga1k5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dressing:before {
+    content: "\e600";
+}
+
+.icon-dressing-plus:before {
+    content: "\e601";
+}
+
+.icon-exit .path1:before {
+    content: "\e602";
+    color: rgb(1, 1, 1);
+}
+.icon-exit .path2:before {
+    content: "\e603";
+    margin-left: -0.74609375em;
+    color: rgb(205, 204, 204);
+}
+
+.icon-facebook:before {
+    content: "\e604";
+}
+
+.icon-google:before {
+    content: "\e605";
+}
+
+.icon-grid-large:before {
+    content: "\e606";
+}
+
+.icon-grid-small:before {
+    content: "\e607";
+}
+
+.icon-instagram:before {
+    content: "\e608";
+}
+
+.icon-letter:before {
+    content: "\e609";
+}
+
+.icon-location:before {
+    content: "\e60a";
+}
+
+.icon-person:before {
+    content: "\e60b";
+}
+
+.icon-pinterest:before {
+    content: "\e60c";
+}
+
+.icon-pinterest-inverse:before {
+    content: "\e60d";
+}
+
+.icon-plus:before {
+    content: "\e60e";
+}
+
+.icon-search:before {
+    content: "\e60f";
+}
+
+.icon-twitter:before {
+    content: "\e610";
+}

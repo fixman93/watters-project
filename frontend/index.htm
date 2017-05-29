@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wattersApp">
+    <head>
+        <title ng-bind="page_title">Watters.com</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="">
+        <meta name="web_author" content=""> 
+        <link href="/assets/dist/styles.min.css?rel=1434361088956" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body ng-cloak class="nojs">
+        <style>
+        #nscp {
+            display: none;
+        }
+        .nojs #nscp {
+            display: block;
+        }
+        </style>
+        <script type="text/javascript">
+        document.getElementsByTagName('body')[0].classList.remove('nojs');
+        </script>
+        <div id="wrapper">
+            <div class="w1">
+                <div class="w2">
+                    <header ng-include src="'/partials/header.html'" class="navbar navbar-default"></header>
+
+                    <main ng-view role="main" id="main" autoscroll="true"></main>
+
+                    <div id="nscp">
+                    Please enable JS or use modern browser
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="f1">
+                    <div class="f2" ng-include src="'/partials/footer.html'"></div>
+                </div>
+            </div>
+        </div>
+        <div ng-include src="'/partials/menu-mobile.html'" class="menu-mobile"></div>
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+        <script src="/bower_components/angular-route/angular-route.js"></script>
+        <script src="/bower_components/matchmedia/matchMedia.js"></script>
+        <script src="/bower_components/ngSticky/lib/sticky.js"></script>
+        <!-- endbower -->
+        <script src="/assets/dist/all.min.js?rel=1434361088956"></script>
+    </body>
+</html>

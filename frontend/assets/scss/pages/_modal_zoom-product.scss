@@ -1,0 +1,51 @@
+.zoom-product {
+    .modal-dialog {
+        width: 650px;
+    }
+    .modal-content {
+        background: none;
+    }
+    .modal-body {
+        padding: 0;
+        overflow: hidden;
+    }
+    .switcher {
+        float: left;
+        width: 125px;
+        height: 720px;
+        display: table;
+        .holder {
+            display: table-cell;
+            vertical-align: bottom;
+        }
+        .img {
+            display: block;
+            margin: 20px 0 0;
+            overflow: hidden;
+            position: relative;
+            width: 125px;
+            height: 180px;
+        }
+    }
+    .zoom-content {
+        float: right;
+        width: 505px;
+        overflow: hidden;
+        position: relative;
+    }
+    .zoom-content img,
+    .switcher img {
+        height: 100%;
+        width: auto;
+        min-width: 100%;
+    }
+    .icon-search {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #666;
+        font-size: 45px;
+        line-height: 1;
+        @include translate(-50%, -50%);
+    }
+}

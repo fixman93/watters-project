@@ -1,0 +1,177 @@
+<article class="container product-block">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1 img-col">
+            <div class="img" ng-repeat="n in ['01', '02']">
+                <a href="#" data-toggle="modal" data-target="#productModal"><img src="/assets/img/img-product{{ n }}.jpg" alt="Image description" /></a>
+            </div>
+            <div class="img">
+                <div class="cell" ng-repeat="n in ['03', '04', '05', '06']">
+                    <img src="/assets/img/img-product{{ n }}.jpg" alt="Image description" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-md-offset-1 txt-col">
+            <span class="style">style 7000b<i>$$$$</i></span>
+            <h1 class="product-title"><a href="#">Asher Gown</a></h1>
+            <p>This full A-line gown featuring embroidery on silk organza on the bodice and skirt is soon to be a classic Watters style. Sweep train.</p>
+            <div class="detail-holder">
+                <span class="label">Sizes</span>
+                <em>00 - 15. Curve Plus</em>
+            </div>
+            <div class="detail-holder">
+                <span class="label">Fabric</span>
+                <em>Silk Organza, Acetate Lining</em>
+            </div>
+            <div class="detail-holder">
+                <a href="#" class="btn-more">Colors<i class="glyphicon glyphicon-menu-down"></i></a>
+                <a href="#" class="btn-more">Fit Guide<i class="icon-plus"></i></a>
+            </div>
+            <div class="btn-row">
+                <button type="button" class="btn room"><i class="icon-dressing-plus"></i></button>
+                <button type="button" class="btn">full details</button>
+            </div>
+            <div class="detail-holder">
+                <span class="label">Share</span>
+                <div class="social-box">
+                    <a title="Pinterest" class="icon-pinterest" href="#"></a>
+                    <a title="Facebook" class="icon-facebook" href="#"></a>
+                    <a title="Twitter" class="icon-twitter" href="#"></a>
+                    <a title="Google +" class="icon-letter" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<section class="container viewed-block">
+    <h2>recently viewed</h2>
+    <div class="box" ng-repeat="n in ['tara gown', 'femi gown', 'aziza gown', 'beilin gown', 'farrin gown']">
+        <a href="/products/{{ $index+1 }}">
+            <img src="/assets/img/img-viewed0{{ $index+1 }}.jpg" alt="Image description" />
+            <h3>{{ n }}</h3>
+        </a>
+    </div>
+</section>
+
+<aside class="find-block">
+    <div class="container">
+        <h2>FIND A RETAILER</h2>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-1">
+                <span class="label-find">LOCATION</span>
+                <a href="#" class="btn-more">11106<i class="icon-plus"></i></a>
+            </div>
+            <div class="col-md-3">
+                <span class="label-find">within</span>
+                <a href="#" class="btn-more">5 miles<i class="glyphicon glyphicon-menu-down"></i></a>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn">SEE STORE PAGE</button>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-10 col-md-offset-1">
+                <span class="legend">4 Retailers within 5 miles of 10016</span>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<section class="map retailer">
+    <img src="/assets/img/img-map.jpg" alt="Image description" />
+    <div class="popup" style="top: 170px; left: 721px;">
+        <a href="#" class="opener"><i></i></a>
+        <div class="box">
+            <address>
+                <a href="#">
+                    624 west<br />
+                    55th street
+                </a>
+            </address>
+            619 west 54<sup>th</sup> st<br />
+            5<sup>th</sup> Floor<br />
+            New York, NY, 10019
+        </div>
+    </div>
+    <div class="popup" style="top: 418px; left: 160px;">
+        <a href="#" class="opener"><i></i></a>
+        <div class="box">
+            <address>
+                <a href="#">
+                    624 west<br />
+                    55th street
+                </a>
+            </address>
+            619 west 54<sup>th</sup> st<br />
+            5<sup>th</sup> Floor<br />
+            New York, NY, 10019
+        </div>
+    </div>
+    <div class="popup" style="top: 314px; left: 522px;">
+        <a href="#" class="opener"><i></i></a>
+        <div class="box">
+            <address>
+                <a href="#">
+                    624 west<br />
+                    55th street
+                </a>
+            </address>
+            619 west 54<sup>th</sup> st<br />
+            5<sup>th</sup> Floor<br />
+            New York, NY, 10019
+        </div>
+    </div>
+    <div class="popup" style="top: 397px; left: 1043px;">
+        <a href="#" class="opener"><i></i></a>
+        <div class="box">
+            <address>
+                <a href="#">
+                    624 west<br />
+                    55th street
+                </a>
+            </address>
+            619 west 54<sup>th</sup> st<br />
+            5<sup>th</sup> Floor<br />
+            New York, NY, 10019
+        </div>
+    </div>
+</section>
+
+<div class="container results-section">
+    <section class="result-row" ng-repeat="n in [1,2,3,4]">
+        <div class="head">
+            <h3 class="title">624 west 55th street</h3><span class="premium">Premium retailer</span>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <h4 class="subtitle">contact</h4>
+                (212) 922-9310<br /><br />
+                <address>
+                    619 WEST 54TH ST<br />
+                    5TH FLOOR<br />
+                    NEW YORK, NY, 10019<br />
+                    USA
+                </address>
+            </div>
+            <div class="col-md-2 col-md-offset-1">
+                <h4 class="subtitle">hours</h4>
+                <dl>
+                    <dt>MONDAY</dt><dd>11AM - 5PM</dd>
+                    <dt>TUESDAY</dt><dd>11AM - 5PM</dd>
+                    <dt>WEDNESDAY</dt><dd>11AM - 5PM</dd>
+                    <dt>THRUSDAY</dt><dd>11AM - 5PM</dd>
+                    <dt>FRIDAY</dt><dd>11AM - 7PM</dd>
+                    <dt>SATURDAY</dt><dd>11AM - 7PM</dd>
+                    <dt>SUNDAY</dt><dd>10AM - 2PM</dd>
+                </dl>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-btn">
+                <button type="button" class="btn btn-primary">SCHEDULE A FITTING</button>
+                <button type="button" class="btn">SEE STORE PAGE</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div ng-include src="'/partials/follow-promo.html'"></div>
+
+<div class="zoom-product modal fade" id="productModal" ng-include src="'/partials/modal_zoom-product.html'"></div>

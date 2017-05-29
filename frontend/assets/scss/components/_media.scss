@@ -1,0 +1,256 @@
+@media (max-width: 1299px) {
+    .w2 {
+        padding-top: 81px;
+    }
+    .navbar {
+        border-width: 28px 0 0;
+        padding: 8px 0;
+        height: 81px;
+        font-size: 8px;
+        .navbar-brand {
+            width: 84px;
+            height: 22px;
+            margin: 3px 0 0 6px !important;
+        }
+        [class^="icon-"] {
+            font-size: 12px;
+        }
+        .position-box {
+            top: -24px;
+            right: 6px;
+            width: 53px;
+            .icon-location {
+                font-size: 12px;
+                margin-top: 0;
+            }
+        }
+        .btn-profile {
+            right: 108px;
+            top: -24px;
+            [class^="icon-"] {
+                font-size: 11px;
+            }
+        }
+        .search-form {
+            right: 227px;
+            top: -22px;
+            .icon-search {
+                font-size: 13px;
+            }
+        }
+        .btn-person {
+            top: -24px;
+            right: 78px;
+        }
+        .link {
+            letter-spacing: 1px;
+            top: -24px;
+            right: 142px;
+        }
+    }
+    .home-nav .navbar-nav, 
+    .navbar .navbar-nav {
+        font-size: 9px;
+        margin: 10px -9px 0 0;
+        & > li {
+            margin: 0 9px;
+            &:last-child {
+                margin-left: 9px;
+            }
+            &.wtoo {
+                a {
+                    width: 28px;
+                    height: 12px;
+                }
+            }
+            &.love-marley {
+                a {
+                    width: 61px;
+                    height: 16px;
+                }
+            }
+            a {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 766px) {
+    .menu-mobile {
+        margin-left: -100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .w2 {
+        padding-top: 80px;
+    }
+    .navbar {
+        border: none;
+        height: 80px;
+        background: #f7f7f7;
+        padding: 19px 0;
+        .icons-holder {
+            display: none;
+        }
+        .navbar-brand {
+            width: 153px;
+            height: 39px;
+            margin: 0 auto !important;
+            float: none;
+            display: block;
+        } 
+    }
+}
+
+@media (max-width: 479px) {
+    .w2 {
+        padding-top: 54px;
+    }
+    .navbar {
+        height: 54px;
+        padding: 13px;
+        .navbar-brand {
+            width: 102px;
+            height: 26px;
+        }
+        .navbar-toggle {
+            top: 18px;
+            left: 9px;
+            width: 36px;
+            height: 24px;
+            .icon-bar {
+                height: 3px;
+                top: 12px;
+                &:nth-child(3) {
+                    margin: -1px 0 0;
+                }
+                &:nth-child(4) {
+                    top: 17px;
+                }
+            }
+        }
+    }
+    .menu-active .navbar .navbar-toggle {
+        .icon-bar {
+            &:nth-child(2),
+            &:nth-child(4) {
+                -moz-transform:rotate(45deg);
+                -webkit-transform:rotate(45deg);
+                -ms-transform:rotate(45deg);
+                transform:rotate(45deg);
+                left: 5px;
+                right: 5px;
+                top: 10px;
+            }
+            &:nth-child(3) {
+                opacity: 0;
+            }
+            &:nth-child(4) {
+                -moz-transform:rotate(-45deg);
+                -webkit-transform:rotate(-45deg);
+                -ms-transform:rotate(-45deg);
+                transform:rotate(-45deg);
+            }
+        }
+    }
+    .menu-mobile {
+        top: 54px;
+        ul {
+            font-size: 11px;
+            margin: 0 0 11px;
+            ul {
+                margin: -17px 0 0;
+                li {
+                    margin: 8px 0 0;
+                }
+                a {
+                    padding-left: 53px;
+                }
+            }
+            li {
+                margin: 5px 0 0;
+            }
+            a {
+                padding: 3px 20px;
+            }
+        }
+        .nav {
+            font-size: 12px;
+            margin: 0 0 1px;
+            li,
+            ul li {
+                margin: 8px 0 0;
+            }
+            .opener {
+                padding: 10px 20px;
+                i {
+                    font-size: 14px;
+                    top: 11px;
+                }
+            }
+            .love-marley,
+            .wtoo {
+                border-width: 2px 0;
+                margin: 0 0 -2px;
+                a {
+                    padding-bottom: 9px;
+                    padding-left: 17px;
+                    padding-top: 10px;
+                    &:after {
+                        width: 59px;
+                        height: 27px;
+                    }
+                }
+            }
+            .love-marley {
+                a {
+                    &:after {
+                        width: 101px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+        .social-box {
+            margin: 0 16px 18px 21px;
+            a {
+                font-size: 20px;
+            }
+        }
+        .icons {
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            padding: 0 0 6px;
+            margin: 0 0 15px;
+            & > * {
+                margin-top: 10px;
+            }
+            .ico,
+            .link {
+                padding: 3px 20px;
+            }
+            .ico [class^="icon-"] {
+                font-size: 12px;
+                margin-top: 6px;
+            }
+        }
+        .search-form {
+            padding: 0 0 0 37px;
+            margin: 0 16px 15px 16px;
+            .ico {
+                height: 28px;
+                width: 37px;
+                i {
+                    font-size: 16px;
+                }
+            }
+            .input-text {
+                font-size: 11px;
+                line-height: 16px;
+                padding: 8px 15px 8px 20px;
+            }
+        }
+    }
+}

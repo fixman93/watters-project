@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins";
+
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+
+// Components
+@import "components/general";
+@import "components/fonts";
+
+// Pages
+@import "pages/homepage";
+@import "pages/landingpage";
+@import "pages/productpage";
+@import "pages/modal_choosen-product";
+@import "pages/modal_zoom-product";
+
+// Media
+@import "components/media";

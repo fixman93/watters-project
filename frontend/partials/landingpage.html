@@ -1,0 +1,191 @@
+<div class="promo-box">
+    <img src="/assets/img/img-promo01.jpg" alt="New spring summer 2015" />
+    <div class="txt">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2><a href="#">new spring <br />summer 2015</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container products-wrapper">
+    <button class="link-hide" ng-click="toggleMenu()" ng-show="!hiddenMenu">Hide Menu<i class="glyphicon glyphicon-menu-up"></i></button>
+    <button class="link-hide" ng-click="toggleMenu()" ng-show="hiddenMenu">Open Menu<i class="glyphicon glyphicon-menu-down"></i></button>
+    <div class="row">
+        <aside class="aside" ng-show="!hiddenMenu">
+            <h3 class="title">{{ title }}</h3>
+            <nav class="widget">
+                <h4 class="widget-title">The Event</h4>
+                <ul>
+                    <li ng-repeat="n in ['wedding dresses', 'reception dresses']"><a href="#">{{ n }}</a></li>
+                </ul>
+            </nav>
+            <nav class="widget">
+                <h4 class="widget-title">Shop By</h4>
+                <ul>
+                    <li ng-repeat="n in ['lace dresses', 'back detail', 'embellished', 'separates']"><a href="#">{{ n }}</a></li>
+                </ul>
+            </nav>
+            <nav class="widget">
+                <h4 class="widget-title">Refine</h4>
+                <ul id="accordion" role="tablist" aria-multiselectable="true">
+                    <li class="panel">
+                        <div id="headingOne" role="tab">
+                            <button class="opener collapsed" aria-controls="collapseOne" aria-expanded="false"  data-target="#collapseOne" data-parent="#accordion" data-toggle="collapse">Size</button>
+                        </div>
+                        <div id="collapseOne" aria-labelledby="headingOne" role="tabpanel" class="collapse" aria-expanded="false">
+                            <ul>
+                                <li ng-repeat="n in ['Missy, 00-15', 'Curve plus, 14w-32w']"><input type="checkbox" id="size-{{ $index+1 }}" /><label for="size-{{ $index+1 }}">{{ n }}</label></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div id="headingTwo" role="tab">
+                            <button class="opener collapsed" aria-controls="collapseTwo" aria-expanded="false"  data-target="#collapseTwo" data-parent="#accordion" data-toggle="collapse">Silhouette</button>
+                        </div>
+                        <div id="collapseTwo" aria-labelledby="headingTwo" role="tabpanel" class="collapse" aria-expanded="false">
+                            <ul>
+                                <li ng-repeat="n in ['A-Line', 'Ball Gown', 'Fit-to-Flare', 'Mermaid', 'Princess', 'Sheath/Slim']"><input type="checkbox" id="silhouette-{{ $index+1 }}" /><label for="silhouette-{{ $index+1 }}">{{ n }}</label></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div id="headingThree" role="tab">
+                            <button class="opener collapsed" aria-controls="collapseThree" aria-expanded="false"  data-target="#collapseThree" data-parent="#accordion" data-toggle="collapse">Neckline</button>
+                        </div>
+                        <div id="collapseThree" aria-labelledby="headingThree" role="tabpanel" class="collapse" aria-expanded="false">
+                            <ul>
+                                <li ng-repeat="n in ['Bateau', 'Illusion', 'Sleeveless', 'Strapless', 'Sweetheart', 'V-Neck']"><input type="checkbox" id="neckline-{{ $index+1 }}" /><label for="neckline-{{ $index+1 }}">{{ n }}</label></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div id="headingFour" role="tab">
+                            <button class="opener collapsed" aria-controls="collapseFour" aria-expanded="false"  data-target="#collapseFour" data-parent="#accordion" data-toggle="collapse">Waist</button>
+                        </div>
+                        <div id="collapseFour" aria-labelledby="headingFour" role="tabpanel" class="collapse" aria-expanded="false">
+                            <ul>
+                                <li ng-repeat="n in ['Dropped', 'Empire', 'Natural']"><input type="checkbox" id="waist-{{ $index+1 }}" /><label for="waist-{{ $index+1 }}">{{ n }}</label></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div id="headingFive" role="tab">
+                            <button class="opener collapsed" aria-controls="collapseFive" aria-expanded="false"  data-target="#collapseFive" data-parent="#accordion" data-toggle="collapse">Fabric</button>
+                        </div>
+                        <div id="collapseFive" aria-labelledby="headingFive" role="tabpanel" class="collapse" aria-expanded="false">
+                            <ul>
+                                <li ng-repeat="n in ['Charmeuse', 'Chiffon', 'Lace', 'Organza', 'Taffeta', 'Tulle/Netting']"><input type="checkbox" id="fabric-{{ $index+1 }}" /><label for="fabric-{{ $index+1 }}">{{ n }}</label></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div id="headingSix" role="tab">
+                            <button class="opener collapsed" aria-controls="collapseSix" aria-expanded="false"  data-target="#collapseSix" data-parent="#accordion" data-toggle="collapse">color</button>
+                        </div>
+                        <div id="collapseSix" aria-labelledby="headingSix" role="tabpanel" class="collapse" aria-expanded="false">
+                            <ul>
+                                <li ng-repeat="n in ['White', 'Off-White', 'Color']"><input type="checkbox" id="color-{{ $index+1 }}" /><label for="color-{{ $index+1 }}">{{ n }}</label></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div id="headingSeven" role="tab">
+                            <button class="opener collapsed" aria-controls="collapseSeven" aria-expanded="false" data-target="#collapseSeven" data-parent="#accordion" data-toggle="collapse">price</button>
+                        </div>
+                        <div id="collapseSeven" aria-labelledby="headingSeven" role="tabpanel" class="collapse" aria-expanded="false">
+                            <ul>
+                                <li ng-repeat="n in ['$$', '$$$', '$$$$']"><input type="checkbox" id="price-{{ $index+1 }}" /><label for="price-{{ $index+1 }}">{{ n }}</label></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div id="headingEight" role="tab">
+                            <button class="opener collapsed" aria-controls="collapseEight" aria-expanded="false"  data-target="#collapseEight" data-parent="#accordion" data-toggle="collapse">delivery</button>
+                        </div>
+                        <div id="collapseEight" aria-labelledby="headingEight" role="tabpanel" class="collapse" aria-expanded="false">
+                            <ul>
+                                <li ng-repeat="n in ['4 Week Rush Delivery']"><input type="checkbox" id="delivery-{{ $index+1 }}" /><label for="delivery-{{ $index+1 }}">{{ n }}</label></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div id="content">
+            <div class="control-panel">
+                <span class="quantity-label">87 / 87&nbsp;&nbsp;products</span>
+                <div class="holder">
+                    <div class="dropdown">
+                        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">sort<span class="glyphicon glyphicon-menu-down"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <li><a href="#">Price</a></li>
+                            <li><a href="#">Date</a></li>
+                        </ul>
+                    </div>
+                    <div class="view-box">
+                        <span class="label-grid">view</span>
+                        <span class="icon-grid-small active"></span>
+                        <span class="icon-grid-large"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row product-section">
+                <div class="col" ng-repeat="n in ['asher gown', 'LINNEA GOWN', 'mabel GOWN', 'tara gown', 'mila GOWN', 'ARCELIA GOWN', 'MADALYN gown', 'vida GOWN', 'shaina GOWN']">
+                    <div class="box">
+                        <div class="img">
+                            <a href="/products/{{ $index+1 }}"><img src="/assets/img/img-products0{{ $index+1 }}.jpg" alt="Image description" /></a>
+                            <div class="icons">
+                                <span class="more" data-toggle="modal" data-target="#choosenModal"><i class="icon-plus"></i></span>
+                                <span class="add"><i class="icon-dressing-plus"></i></span>
+                            </div>
+                        </div>
+                        <h3><a href="/products/{{ $index+1 }}">{{ n }}</a></h3>
+                    </div>
+                </div>
+                <div class="col long">
+                    <div class="box">
+                        <div class="img">
+                            <a href="#"><img src="/assets/img/img-products10.jpg" alt="Image description" /></a>
+                            <div class="icons">
+                                <span class="more" data-toggle="modal" data-target="#choosenModal"><i class="icon-plus"></i></span>
+                                <span class="add"><i class="icon-dressing-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <h3><a href="#">First <br />Comes <br />Love</a></h3>
+                            <p>Perfectly embellished gowns <br />for your big day </p>
+                            <div class="btn-row">
+                                <button class="btn btn-default" type="button">view more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ng-repeat="n in ['femi gown', 'aziza GOWN', 'beilin  GOWN', 'zarrin gown', 'kian GOWN', 'farrin  GOWN']">
+                    <div class="box">
+                        <div class="img">
+                            <a href="/products/{{ $index+11 }}"><img src="/assets/img/img-products{{ $index+11 }}.jpg" alt="Image description" /></a>
+                            <div class="icons">
+                                <span class="more" data-toggle="modal" data-target="#choosenModal"><i class="icon-plus"></i></span>
+                                <span class="add"><i class="icon-dressing-plus"></i></span>
+                            </div>
+                        </div>
+                        <h3><a href="/products/{{ $index+11 }}">{{ n }}</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="loading-row">
+                <img src="/assets/img/icons/loading.gif" alt="Image description" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-include src="'/partials/follow-promo.html'"></div>
+
+<div class="choosen-product modal fade" id="choosenModal" ng-include src="'/partials/modal_choosen-product.html'"></div>

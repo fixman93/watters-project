@@ -1,0 +1,112 @@
+.choosen-product {
+    .modal-body {
+        padding: 0;
+        overflow: hidden;
+    }
+    .img-col {
+        float: left;
+        width: 48.8%;
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .carousel-control {
+        opacity: 1;
+        text-shadow: none;
+        font-size: 30px;
+        background: none;
+        .glyphicon {
+            position: absolute;
+            top: 50%;
+            left: 4px;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+    .txt-col {
+        overflow: hidden;
+        padding: 75px 82px 25px 80px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 18px;
+        .style {
+            display: block;
+            padding: 0 0 22px;
+            text-transform: uppercase;
+            i {
+                font-style: normal;
+                padding-left: 15px;
+            }
+        }
+        h3 {
+            font: 30px/30px $sansFontFamilyThin;
+            margin: 0 0 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            a {
+                color: $grayLight;
+            }
+        }
+        p {
+            font: 14px/18px $serifFontFamilyItalic;
+            margin: 0 13px 31px;
+        }
+        .detail-holder {
+            padding: 0 0 21px;
+            .label {
+                font-size: 12px;
+                color: $grayLight;
+                display: block;
+                font-weight: normal;
+                text-transform: uppercase;
+                padding: 0 0 8px;
+            }
+            em {
+                font: 14px/18px $serifFontFamilyItalic;
+            }
+        }
+    }
+    .colors-list {        margin: 1px auto 28px;        padding: 0;        list-style: none;
+        font-size: 0;
+        letter-spacing: -4px;
+        max-width: 160px;
+        li {
+            width: 38px;
+            height: 18px;
+            overflow:hidden;
+            position:relative;
+            @include inline-block();
+            margin: 1px 1px 0;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.7;
+            }
+        }    }
+    .btn-row {
+        padding-bottom: 26px;
+        .btn {
+            margin: 0 6px;
+            width: 190px;
+        }
+    }
+    .btn.room {
+        padding: 10px 9px;
+        width: auto;
+        i {
+            font-size: 14px;
+        }
+    }
+    .social-box {
+        font-size: 17px;
+        padding: 3px 0 0;
+        a {
+            margin: 0 6px;
+        }
+        .icon-letter {
+            font-size: 14px;
+        }
+    }
+}
